@@ -1,3 +1,8 @@
+const Discord = require('discord.js');
+
 module.exports = (client, message, query, tracks, content, collector) => {
-    message.channel.send(`${client.emotes.error} - You must send a valid number between **1** and **${tracks.length}** !`);
+    const emb = new Discord.MessageEmbed()
+	.setColor('#fa9c1e')
+	.setDescription(`${client.emotes.error} Devi specificare un numero da **1** a **${tracks.length}**!`)
+    message.channel.send(emb);
 };

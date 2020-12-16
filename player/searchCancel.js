@@ -1,3 +1,8 @@
+const Discord = require('discord.js');
+
 module.exports = (client, message, query, tracks) => {
-    message.channel.send(`${client.emotes.error} - You did not provide a valid response ... Please send the command again !`);
+    const emb = new Discord.MessageEmbed()
+	.setColor('#fa9c1e')
+	.setDescription(`${client.emotes.error} Tempo scaduto, azione **annullata**.`)
+    message.channel.send(emb);
 };

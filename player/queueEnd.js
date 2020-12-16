@@ -1,3 +1,8 @@
+const Discord = require('discord.js');
+
 module.exports = (client, message, queue) => {
-    message.channel.send(`${client.emotes.error} - Music stopped as there is no more music in the queue !`);
+    const emb = new Discord.MessageEmbed()
+	.setColor('#fa9c1e')
+	.setDescription(`${client.emotes.error} **Non** ci sono più **canzoni** nella **coda**!`)
+    message.channel.send(emb);
 };

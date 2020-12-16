@@ -1,3 +1,8 @@
+const Discord = require('discord.js');
+
 module.exports = (client, message, playlist) => {
-    message.channel.send(`${client.emotes.music} - ${playlist.title} has been added to the queue (**${playlist.items.length}** songs) !`);
+    const emb = new Discord.MessageEmbed()
+	.setColor('#fa9c1e')
+	.setDescription(`${client.emotes.music} La playlist **${playlist.title}** è stata aggiunta alla **coda** (\`${playlist.items.length}\` canzoni)`)
+    message.channel.send(emb);
 };

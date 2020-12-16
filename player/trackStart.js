@@ -1,3 +1,8 @@
+const Discord = require('discord.js');
+
 module.exports = (client, message, track) => {
-    message.channel.send(`${client.emotes.music} - Now playing ${track.title} into ${message.member.voice.channel.name} ...`);
+    const emb = new Discord.MessageEmbed()
+	.setColor('#fa9c1e')
+	.setDescription(`${client.emotes.music} Riproduco **${track.title}**`)
+    message.channel.send(emb);
 };
