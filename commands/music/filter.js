@@ -9,13 +9,13 @@ module.exports = {
 
         if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return message.channel.send(`${client.emotes.error} - Devi **essere** in un **canale vocale** per poter **utilizzare** il Bot!`);
 
-        if (!client.player.getQueue(message)) return message.channel.send(`${client.emotes.error} - No music currently playing !`);
+        if (!client.player.getQueue(message)) return message.channel.send(`${client.emotes.error} - **Nessun **brano **attualmente **in **riproduzione**`);
 
         if (!args[0]) return message.channel.send(`${client.emotes.error} - Please specify a valid filter to enable or disable !`);
 
         const filterToUpdate = Object.values(client.filters).find((f) => f.toLowerCase() === args[0].toLowerCase());
 
-        if (!filterToUpdate) return message.channel.send(`${client.emotes.error} - This filter doesn't exist !`);
+        if (!filterToUpdate) return message.channel.send(`${client.emotes.error} - Questo filtro **non** esiste`);
 
         const filterRealName = Object.keys(client.filters).find((f) => client.filters[f] === filterToUpdate);
 

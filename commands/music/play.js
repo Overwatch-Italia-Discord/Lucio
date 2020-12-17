@@ -9,7 +9,7 @@ module.exports = {
 
         if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return message.channel.send(`${client.emotes.error} - Devi **essere** in un **canale vocale** per poter **utilizzare** il Bot!`);
 
-        if (!args[0]) return message.channel.send(`${client.emotes.error} - Specifica una playlist o una canzone subito dopo il comando!`);
+        if (!args[0]) return message.channel.send(`${client.emotes.error} - Specifica una **playlist** o una **canzone**`);
 
         client.player.play(message, args.join(" "));
     },
