@@ -39,7 +39,7 @@ module.exports = {
                 fields: [
                     { name: 'Canale', value: track.author, inline: true },
                     { name: 'Richiesto da', value: track.requestedBy.username, inline: true },
-                    { name: 'From playlist', value: track.fromPlaylist ? 'Si' : 'No', inline: true },
+                    { name: 'Da Playlist', value: track.fromPlaylist ? 'Si' : 'No', inline: true },
 
                     { name: 'Views', value: track.views, inline: true },
                     { name: 'Durata', value: track.duration, inline: true },

@@ -25,10 +25,14 @@ module.exports = {
             return message.channel.send(emb)
         }
 
-        if (client.player.getQueue(message).paused) return message.channel.send(`${client.emotes.error} - Questo **brano** è già in pausa`);
+        if (client.player.getQueue(message).paused) {
+            emb.setDescription(`${client.emotes.error} Questo **brano** è già in **pausa**!`)
+            return message.channel.send(emb);
+        }
 
         client.player.pause(message);
 
-        message.channel.send(`${client.emotes.success} - Song ${client.player.getQueue(message).playing.title} **paused** !`);
+        emb.setDescription(`${client.emotes.success} Brano **${client.player.getQueue(message).playing.title}** messo in **pausa**!`)
+        message.channel.send(emb);
     },
 };

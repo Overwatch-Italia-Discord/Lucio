@@ -1,3 +1,5 @@
+const Discord = require('discord.js');
+
 module.exports = {
     name: 'debug',
     aliases: [],
@@ -5,6 +7,9 @@ module.exports = {
     utilisation: '{prefix}debug',
 
     execute(client, message) {
-        message.channel.send(`${client.emotes.success} - Robot connected in **${client.voice.connections.size}** channels !`);
+        const emb = new Discord.MessageEmbed()
+        .setDescription(`${client.emotes.success} Il bot è connsesso in \`${client.voice.connections.size}\` canali!`)
+        .setColor("#fa9c1e");
+        message.channel.send(emb);
     },
 };
