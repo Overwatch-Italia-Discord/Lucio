@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 
 module.exports = {
-    name: 'ripreso',
+    name: 'riprendi',
     aliases: ['resume'],
     category: 'Music',
     utilisation: '{prefix}resume',
