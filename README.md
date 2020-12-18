@@ -15,3 +15,5 @@ Comandi per utilizzare il Bot
 .effetti   
 .effetto <effetto>
 ```
+
+![Lùcio](https://cdn.discordapp.com/attachments/780836554192191538/789413459414614036/Informazioni.png)
