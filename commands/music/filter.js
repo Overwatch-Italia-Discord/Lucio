@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 module.exports = {
     name: 'effetto',
-    aliases: [],
+    aliases: ['filter'],
     category: 'Music',
     utilisation: '{prefix}filter [filter name]',
 
