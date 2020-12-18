@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 module.exports = {
     name: 'stop',
-    aliases: [],
+    aliases: ["ferma", "fermo", "dc", "disconnect", "leave"],
     category: 'Music',
     utilisation: '{prefix}stop',
 
