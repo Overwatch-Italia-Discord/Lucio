@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 
 module.exports = {
-    name: 'queue',
-    aliases: ["coda"],
+    name: 'coda',
+    aliases: ["queue", "q"],
     category: 'Music',
     utilisation: '{prefix}queue',
 
