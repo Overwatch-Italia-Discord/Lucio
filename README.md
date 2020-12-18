@@ -10,8 +10,8 @@ Comandi per utilizzare il Bot
 .play <canzone>
 .nowplaying
 .coda
-.pause 
-.resume
+.pausa 
+.riprendi
 .effetti   
 .effetto <effetto>
 ```
