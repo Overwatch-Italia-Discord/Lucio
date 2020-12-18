@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 
 module.exports = {
-    name: 'pause',
-    aliases: [],
+    name: 'pausa',
+    aliases: ['pause'],
     category: 'Music',
     utilisation: '{prefix}pause',
 

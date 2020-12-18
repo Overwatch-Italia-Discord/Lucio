@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 
 module.exports = {
-    name: 'resume',
-    aliases: [],
+    name: 'ripreso',
+    aliases: ['resume'],
     category: 'Music',
     utilisation: '{prefix}resume',
 
@@ -32,7 +32,7 @@ module.exports = {
 
         client.player.resume(message);
 
-        emb.setDescription(`${client.emotes.success} Brano **${client.player.getQueue(message).playing.title}** continuato.`)
+        emb.setDescription(`${client.emotes.success} Brano **${client.player.getQueue(message).playing.title}** ripreso.`)
         message.channel.send(emb);
     },
 };
