@@ -18,4 +18,4 @@ Comandi per utilizzare il Bot
 .volume <volume>
 ```
 
-![Lùcio](https://cdn.discordapp.com/attachments/780836554192191538/789412675733422110/README.png)
+![Lùcio](https://cdn.discordapp.com/attachments/780836554192191538/789413459414614036/Informazioni.png)
