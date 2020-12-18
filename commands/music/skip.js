@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 
 module.exports = {
-    name: 'skip',
-    aliases: ['sk', 'salta'],
+    name: 'salta',
+    aliases: ['sk', 'skip'],
     category: 'Music',
     utilisation: '{prefix}skip',
 
